@@ -1,4 +1,4 @@
-# 🏦 Bank Management System (OOP) – macOS Edition
+# 🏦 Bank system simulation (OOP) -  macOS Edition
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?size=28&color=007ACC&width=1000&lines=macOS-Compatible+Bank+Simulation;Object-Oriented+Programming+in+C%2B%2B;Secure+Console+Application;Built+for+Learning;ProgrammingAdvices+Adaptation" alt="Typing Animation" />
@@ -22,9 +22,9 @@
   <img src="https://readme-typing-svg.herokuapp.com?size=22&color=FF6600&width=800&lines=High-performance+Console-based+Bank+Management;Secure+and+Visual+OOP+System;Manage+Banking+Operations+Effortlessly;macOS-Compatible+Version;Simulation+for+Learning+Purposes" alt="Typing Animation" />
 </p>
 
-A high-performance **Console-based Bank Management System** built with **C++**. This project focuses on **Object-Oriented Programming (OOP)** principles, providing a secure and visually intuitive way to manage banking operations, currency exchange, and user activities.
+A high-performance **Console-based Bank system simulation ** built with **C++**. This project focuses on **Object-Oriented Programming (OOP)** principles, providing a secure and visually intuitive way to manage banking operations, currency exchange, and user activities.
 
-> ⚠️ **Important Notice:** This project is a **simulation (محاكاة)** built **strictly for educational purposes** (لأغراض تعليمية فقط). It is not intended for real-world banking, financial transactions, or production environments.
+> ⚠️ **Important Notice:** This project is a **simulation ** built **strictly for educational purposes** . It is not intended for real-world banking, financial transactions, or production environments.
 
 ---
 
