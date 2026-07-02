@@ -1,10 +1,4 @@
-
-
-
-
-
-```markdown
-# 🏦 Bank-system-simulation-OOP- – macOS Edition
+# 🏦 Bank Management System (OOP) – macOS Edition
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?size=28&color=007ACC&width=1000&lines=macOS-Compatible+Bank+Simulation;Object-Oriented+Programming+in+C%2B%2B;Secure+Console+Application;Built+for+Learning;ProgrammingAdvices+Adaptation" alt="Typing Animation" />
@@ -39,146 +33,139 @@ A high-performance **Console-based Bank Management System** built with **C++**. 
 This is a **macOS-compatible version** of the original project from **ProgrammingAdvices**.
 
 ### Why this version exists
-The original library relies on Microsoft’s proprietary feature:
+The original library relies on Microsoft's proprietary feature:
 
 ```cpp
+
 __declspec(property)
-```
 
-which is supported by **Microsoft Visual Studio** but is **not supported** by **Apple Clang** or **GCC**. Because of this, the original code cannot be compiled on macOS without modifications.
+which is supported by Microsoft Visual Studio but is not supported by Apple Clang or GCC. Because of this, the original code cannot be compiled on macOS without modifications.
+Changes Made
 
-### Changes Made
-- ✅ Removed all usages of `__declspec(property)`.
-- ✅ Replaced Visual Studio–specific constructs with Standard C++.
-- ✅ Preserved the original function names and behavior as much as possible.
-- ✅ Fixed several issues discovered during the migration process.
-- ✅ Tested with **Apple Clang** on macOS.
-- ✅ Adjusted file paths to work with macOS directory structures.
+    ✅ Removed all usages of __declspec(property).
 
-### Compatibility
+    ✅ Replaced Visual Studio–specific constructs with Standard C++.
 
-| Compiler / Platform | Supported |
-|---------------------|-----------|
-| Apple Clang (macOS) | ✅ Fully Supported |
-| GCC (Linux) | ✅ Fully Supported |
-| Clang | ✅ Fully Supported |
-| Microsoft Visual Studio | ⚠️ Not Tested |
+    ✅ Preserved the original function names and behavior as much as possible.
 
----
+    ✅ Fixed several issues discovered during the migration process.
 
-## 📁 Data Files (File Handling)
+    ✅ Tested with Apple Clang on macOS.
 
-The system uses external `.txt` files for persistent data storage. **Make sure these files exist** in the directory specified in the code (or update the paths):
+    ✅ Adjusted file paths to work with macOS directory structures.
 
-| File Name | Purpose |
-|-----------|---------|
-| `ClientFile.txt` | Stores encrypted client account information (CRUD operations). |
-| `Users.txt` | Stores encrypted system user credentials and permissions. |
-| `LoginRecord.text` | Stores the login history of all users (Audit Trail). |
-| *(Transfer Logs)* | Transfer logs are written to `Users.txt` in the current implementation (or refer to code). |
+Compatibility
+Compiler / Platform	Supported
+Apple Clang (macOS)	✅ Fully Supported
+GCC (Linux)	✅ Fully Supported
+Clang	✅ Fully Supported
+Microsoft Visual Studio	⚠️ Not Tested
+📁 Data Files (File Handling)
 
-> ⚠️ **Important:** The code contains **absolute file paths** (e.g., `/Users/.../Desktop/...`). You **must update** these paths in `clsBanckClient.h`, `clsUser.h`, and `clsCurrency.h` to match your local directory structure before compiling and running.
+The system uses external .txt files for persistent data storage. Make sure these files exist in the directory specified in the code (or update the paths):
+File Name	Purpose
+ClientFile.txt	Stores encrypted client account information (CRUD operations).
+Users.txt	Stores encrypted system user credentials and permissions.
+LoginRecord.text	Stores the login history of all users (Audit Trail).
+TransferRecord.text	Stores detailed transfer logs (Source, Destination, Amount, etc.).
 
----
+    ⚠️ Important: The code contains absolute file paths (e.g., /Users/.../Desktop/...). You must update these paths in clsBanckClient.h, clsUser.h, and clsCurrency.h to match your local directory structure before compiling and running.
 
-## 🚀 Main Features
+🚀 Main Features
+🔐 1. Authentication & Access
+<p align="center"> <img src="https://readme-typing-svg.herokuapp.com?size=20&color=00BFFF&width=800&lines=Secure+Login+System;Dynamic+Permissions;Login+Tracking;Multi-Level+Security" alt="Typing Animation" /> </p>
 
-### 🔐 1. Authentication & Access
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=20&color=00BFFF&width=800&lines=Secure+Login+System;Dynamic+Permissions;Login+Tracking;Multi-Level+Security" alt="Typing Animation" />
-</p>
+    Secure Login System: The gateway to the system with credential verification.
 
-- **Secure Login System:** The gateway to the system with credential verification.
-- **Dynamic Permissions:** Each user has specific access rights (Admin/User). Permissions are bitwise (1, 2, 4, 8, etc.).
-- **Login Tracking:** Every successful login attempt is recorded with timestamps and stored in `LoginRecord.text`.
+    Dynamic Permissions: Each user has specific access rights (Admin/User). Permissions are bitwise (1, 2, 4, 8, etc.).
 
-### 👥 2. Client & User Management
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=20&color=00FF7F&width=800&lines=Full+CRUD+Operations;Encrypted+Storage;Permissions+Display;User+Management+Tools" alt="Typing Animation" />
-</p>
+    Login Tracking: Every successful login attempt is recorded with timestamps and stored in LoginRecord.text.
 
-- **Client Operations:** Full CRUD (Add, Delete, Update, Find) with encrypted storage.
-- **User Operations:** Complete management of system users and their security levels.
-- **Permissions Display:** A dedicated screen to view user access rights.
+👥 2. Client & User Management
+<p align="center"> <img src="https://readme-typing-svg.herokuapp.com?size=20&color=00FF7F&width=800&lines=Full+CRUD+Operations;Encrypted+Storage;Permissions+Display;User+Management+Tools" alt="Typing Animation" /> </p>
 
-### 💰 3. Banking & Transactions
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=20&color=FFD700&width=800&lines=Balance+Management;Secure+Money+Transfer;Transfer+Logs;Audit+Trail+Included" alt="Typing Animation" />
-</p>
+    Client Operations: Full CRUD (Add, Delete, Update, Find) with encrypted storage.
 
-- **Balance Management:** Deposit, Withdraw, and Total Balances.
-- **Transfer System:** Secure money transfer between accounts with real-time validation and balance checks.
-- **Quick & Normal Withdraw:** Supports both standard and quick withdrawal methods.
+    User Operations: Complete management of system users and their security levels.
 
-### 🌍 4. Currency Exchange System
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=20&color=FF4500&width=800&lines=Live-Style+Rates;Currency+Finder;Currency+Calculator;Real-Time+Conversions" alt="Typing Animation" />
-</p>
+    Permissions Display: A dedicated screen to view user access rights.
 
-- **Live-Style Rates:** View currency rates relative to the USD.
-- **Currency Finder:** Search for any currency by code or country.
-- **Currency Calculator:** Perform instant conversions between different global currencies.
+💰 3. Banking & Transactions
+<p align="center"> <img src="https://readme-typing-svg.herokuapp.com?size=20&color=FFD700&width=800&lines=Balance+Management;Secure+Money+Transfer;Transfer+Logs;Audit+Trail+Included" alt="Typing Animation" /> </p>
 
-### 🛡️ 5. Security & Logs (Audit Trail)
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=20&color=8A2BE2&width=800&lines=User+Move+Tracking;Logs+Viewer;Security+Refresh;Re-Encryption+Tool" alt="Typing Animation" />
-</p>
+    Balance Management: Deposit, Withdraw, and Total Balances.
 
-- **User Move Tracking:** The system records every single action by the user (Login, Edits, Views).
-- **Logs Viewer:** A clean, formatted table for admins to review all system activities (Login Logs & Transfer Logs).
+    Transfer System: Secure money transfer between accounts with real-time validation and balance checks.
 
----
+    Quick & Normal Withdraw: Supports both standard and quick withdrawal methods.
 
-## 🏗️ Organized Code Structure (Layered Architecture)
+🌍 4. Currency Exchange System
+<p align="center"> <img src="https://readme-typing-svg.herokuapp.com?size=20&color=FF4500&width=800&lines=Live-Style+Rates;Currency+Finder;Currency+Calculator;Real-Time+Conversions" alt="Typing Animation" /> </p>
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=20&color=FFA500&width=800&lines=Layered+Architecture;Screen+Inheritance;Robust+Input+Validation" alt="Typing Animation" />
-</p>
+    Live-Style Rates: View currency rates relative to the USD.
 
-- **Layered Architecture (Core, Screens, Libs):** Clear separation of concerns for maintainability.
-- **Screen Inheritance for UI Consistency:** All screens inherit from a base `clsScreen` class for uniform behavior.
-- **Robust Input Validation System:** Prevents invalid data entry using the `clsInputValidate` class.
+    Currency Finder: Search for any currency by code or country.
 
-## 💰 Financial & Banking Operations
+    Currency Calculator: Perform instant conversions between different global currencies.
 
-- **Quick & Normal Withdraw Logic:** Prevents overdrafts with clear error messages.
-- **Deposit System with Instant Balance Update:** Immediately reflects deposited amounts.
-- **Professional Formatted Tables:** All data is displayed in clean, colored, and well-structured tables.
+🛡️ 5. Security & Logs (Audit Trail)
+<p align="center"> <img src="https://readme-typing-svg.herokuapp.com?size=20&color=8A2BE2&width=800&lines=User+Move+Tracking;Logs+Viewer;Security+Refresh;Re-Encryption+Tool" alt="Typing Animation" /> </p>
 
-## 🧾 Automatic Receipts System
+    User Move Tracking: The system records every single action by the user (Login, Edits, Views).
 
-- **Automatic Receipts Generation:** Every successful transaction generates a detailed receipt concept.
-- **External File Storage (File Handling):** Uses `.txt` files for all persistent storage.
-- **Detailed Transaction Logging:** Every financial move is logged with timestamps and amounts.
+    Logs Viewer: A clean, formatted table for admins to review all system activities (Login Logs & Transfer Logs).
 
----
+🏗️ Organized Code Structure (Layered Architecture)
+<p align="center"> <img src="https://readme-typing-svg.herokuapp.com?size=20&color=FFA500&width=800&lines=Layered+Architecture;Screen+Inheritance;Robust+Input+Validation" alt="Typing Animation" /> </p>
 
-## 🎨 User Interface
+    Layered Architecture (Core, Screens, Libs): Clear separation of concerns for maintainability.
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=20&color=00CED1&width=800&lines=Colorful+Terminal+UI;Smooth+Navigation;User-Friendly+Interaction" alt="Typing Animation" />
-</p>
+    Screen Inheritance for UI Consistency: All screens inherit from a base clsScreen class for uniform behavior.
 
-- **Full Color Support:** A professional color-coded terminal experience.
-- **Modular Menus:** Intuitive navigation through nested, organized screens.
-- **Formatted Tables:** Data is displayed in neat, structured, and colored tables.
+    Robust Input Validation System: Prevents invalid data entry using the clsInputValidate class.
 
----
+💰 Financial & Banking Operations
 
-## 🔐 Encryption Engine (5-Layers)
+    Quick & Normal Withdraw Logic: Prevents overdrafts with clear error messages.
+
+    Deposit System with Instant Balance Update: Immediately reflects deposited amounts.
+
+    Professional Formatted Tables: All data is displayed in clean, colored, and well-structured tables.
+
+🧾 Automatic Receipts System
+
+    Automatic Receipts Generation: Every successful transaction generates a detailed receipt concept.
+
+    External File Storage (File Handling): Uses .txt files for all persistent storage.
+
+    Detailed Transaction Logging: Every financial move is logged with timestamps and amounts.
+
+🎨 User Interface
+<p align="center"> <img src="https://readme-typing-svg.herokuapp.com?size=20&color=00CED1&width=800&lines=Colorful+Terminal+UI;Smooth+Navigation;User-Friendly+Interaction" alt="Typing Animation" /> </p>
+
+    Full Color Support: A professional color-coded terminal experience.
+
+    Modular Menus: Intuitive navigation through nested, organized screens.
+
+    Formatted Tables: Data is displayed in neat, structured, and colored tables.
+
+🔐 Encryption Engine (5-Layers)
 
 The system protects sensitive data using a custom-built cryptographic logic:
-1. **XOR Cipher** (Initial encryption)
-2. **Random Padding** (Noise injection)
-3. **Case Inversion** (Casing flip)
-4. **Nested XOR** (Double security)
-5. **Hexadecimal** (Final storage format)
 
----
+    XOR Cipher (Initial encryption)
 
-## 📂 Project Structure
+    Random Padding (Noise injection)
 
-```
+    Case Inversion (Casing flip)
+
+    Nested XOR (Double security)
+
+    Hexadecimal (Final storage format)
+
+📂 Project Structure
+text
+
 For Practsing/
 ├── core/                         # Core Business Logic
 │   ├── clsBanckClient.h          # Bank Client CRUD & Transactions
@@ -201,49 +188,45 @@ For Practsing/
 ├── clsScreen.h                   # Base Screen (Header, Permissions)
 ├── Global.h                      # Global Current User object
 └── main.cpp                      # Entry point
-```
 
----
+🚀 Skills Applied  
 
-## 🚀 Skills Applied (المهارات اللي طبقتها)
+    ✅ OOP Principles: (Inheritance, Encapsulation, Polymorphism, Abstraction)
 
-- ✅ **OOP Principles:** (Inheritance, Encapsulation, Polymorphism, Abstraction)
-- ✅ **Software Design:** (Modular Design, Layered Architecture & Clean Code)
-- ✅ **Data Persistence:** (Advanced File Handling with external `.txt` storage)
-- ✅ **Security Implementation:** (Custom 5-layer encryption)
-- ✅ **UI/UX Design:** (Colored terminal outputs and formatted tables)
+    ✅ Software Design: (Modular Design, Layered Architecture & Clean Code)
 
-> 💡 **الرحلة دي علمتني إن البرمجة مش بس كود شغال، البرمجة هي إنك تبني نظام صح من الأول وقابل للتطوير.**  
-> *(This journey taught me that programming isn't just about working code; programming is about building a correct, scalable system from the ground up.)*
+    ✅ Data Persistence: (Advanced File Handling with external .txt storage)
 
----
+    ✅ Security Implementation: (Custom 5-layer encryption)
 
-## 👨‍💻 Original Author & Credits
+    ✅ UI/UX Design: (Colored terminal outputs and formatted tables)
 
-**Original Library & Course Materials by:**  
-**Mohammed Abu-Hadhoud** (ProgrammingAdvices)
+    (This journey taught me that programming isn't just about working code; programming is about building a correct, scalable system from the ground up.)
 
-This repository contains a **portability adaptation for Standard C++ environments** (specifically macOS and Linux). The core functionality and API of the original library have been kept intact whenever possible to allow students using macOS to follow the course materials without requiring Visual Studio or Windows-specific language extensions.
+👨‍💻 Original Author & Credits
 
----
+Original Library & Course Materials by:
+Mohammed Abu-Hadhoud (ProgrammingAdvices)
 
-## 📌 How to Run
+This repository contains a portability adaptation for Standard C++ environments (specifically macOS and Linux). The core functionality and API of the original library have been kept intact whenever possible to allow students using macOS to follow the course materials without requiring Visual Studio or Windows-specific language extensions.
+📌 How to Run
 
-1.  **Clone the repository.**
-2.  **Update file paths:** Open `clsBanckClient.h`, `clsUser.h`, and `clsCurrency.h` and change the `static const string` paths to your local directory.
-3.  **Compile** using any C++17 compliant compiler (Apple Clang or GCC):
-    ```bash
+    Clone the repository.
+
+    Update file paths: Open clsBanckClient.h, clsUser.h, and clsCurrency.h and change the static const string paths to your local directory.
+
+    Compile using any C++17 compliant compiler (Apple Clang or GCC):
+    bash
+
     g++ -std=c++17 main.cpp -o BankSystem
-    ```
-4.  **Run** the executable:
-    ```bash
+
+    Run the executable:
+    bash
+
     ./BankSystem
-    ```
-5.  Default login credentials (if you haven't changed the files) are stored in `Users.txt`. You may need to create the first admin user manually in the file or through the system's initial setup.
 
----
+    Default login credentials (if you haven't changed the files) are stored in Users.txt. You may need to create the first admin user manually in the file or through the system's initial setup.
 
-## 📄 License
+📄 License
 
-This project is for **educational purposes only**. All rights belong to the original author, Mohammed Abu-Hadhoud (ProgrammingAdvices).
-```
+This project is for educational purposes only. All rights belong to the original author, Mohammed Abu-Hadhoud (ProgrammingAdvices).
